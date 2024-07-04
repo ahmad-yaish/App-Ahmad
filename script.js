@@ -1,8 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const dailyScheduleButton = document.getElementById("daily-schedule-button");
-    dailyScheduleButton.addEventListener("click", function() {
-        alert("عرض جدولك اليومي!"); // يمكنك هنا استبدال هذا بتنفيذ الإجراء المطلوب
-    });
     const startButton = document.getElementById("start-button");
     const startSection = document.getElementById("start-section");
     const userInfoSection = document.getElementById("user-info-section");
@@ -24,7 +20,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const mainSection = document.getElementById("main-section");
 
     let routineCount = 0;
-
+    const dailyScheduleButton = document.getElementById("daily-schedule-button");
+    dailyScheduleButton.addEventListener("click", function() {
+        alert("عرض جدولك اليومي!"); // يمكنك هنا استبدال هذا بتنفيذ الإجراء المطلوب
+    });
     startButton.addEventListener("click", function() {
         startSection.style.display = "none";
         userInfoSection.style.display = "block";
