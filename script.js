@@ -112,8 +112,15 @@ taskForm.reset();
 });
 
 completeTasksButton.addEventListener("click", function() {
+    // حفظ المهام في المخزن المحلي
+    const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+
     taskSection.style.display = "none";
     calendarSection.style.display = "block";
+    renderCalendar();
+});
+
     renderCalendar();
 });
 
