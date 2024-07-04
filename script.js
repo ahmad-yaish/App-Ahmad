@@ -83,6 +83,8 @@ document.addEventListener("DOMContentLoaded", function() {
         };
 
 localStorage.setItem('dailyRoutine', JSON.stringify(dailyRoutine));
+localStorage.setItem('tasks', JSON.stringify(tasks));
+
 
         localStorage.setItem('dailyRoutine', JSON.stringify(dailyRoutine));
         alert("تم حفظ الروتين اليومي.");
