@@ -160,3 +160,21 @@ h2#user-fullname {
     background-color: #f4f4f4;
     color: #333;
 }
+.user-avatar-button {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.user-avatar-button:hover {
+    background-color: #0056b3;
+}
